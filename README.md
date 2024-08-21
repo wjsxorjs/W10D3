@@ -28,7 +28,15 @@
 > > 12. INSERT INTO [테이블명] VALUES ([데이터]);로 데이터 생성
 > > 13. SELECT * FROM [테이블명];으로 데이터 생성 확인
 > > 14. commit;으로 테이블 수정 적용
+> 
 > ### MYSQL 저장 위치 및 VOLUME
 > > 1. docker exec -it [mysql 컨테이너명] bash
 > > 2. bash에서 cd ./var/lib/mysql
 > > 3. 해당 위치는 mysql의 DB가 저장되는 위치
+> > 4. exit로 bash에서 빠져나오기
+> > 5. docker run -d -p [연결하는 포트]:[연결할 포트] -v [Volume 저장위치]:[DB 저장위치]<br> -e MYSQL_ROOT_PASSWORD=[비밀번호] --name [컨테이너명] mysql:8.0
+> > 6. docker exec -it [mysql 컨테이너명] mysql -u root -p
+> > 7. " MYSQL 사용법 " 반복
+> > 8. docker stop/rm [컨테이너명] : 컨테이너 정지 후 삭제
+> > 9. " 5, 6번 항목 " 반복
+> > 10. DB와 Table이 저장되어있는지 확인
