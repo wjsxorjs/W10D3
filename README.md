@@ -25,3 +25,6 @@
 > >  -> CONSTRINT PRIMARY KEY(idx)<br>
 > >     );<br>
 > > 11. show tables;로 테이블 생성 확인
+> > 12. INSERT INTO [테이블명] VALUES ([데이터]);로 데이터 생성
+> > 13. SELECT * FROM [테이블명];으로 데이터 생성 확인
+> > 14. commit;으로 테이블 수정 적용
