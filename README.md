@@ -40,3 +40,12 @@
 > > 8. docker stop/rm [컨테이너명] : 컨테이너 정지 후 삭제
 > > 9. " 5, 6번 항목 " 반복
 > > 10. DB와 Table이 저장되어있는지 확인
+
+## Dockerfile
+> Docker에서 이미지를 만들 수 있는 방법 중 하나로 Dockerfile을 정의하고 build하는 것이다.
+> Dockerfile는 build를 통해 IMAGE로 만들 수 있고 Dockerfile에서 바로 container를 만들 수는 없다.
+> > ### 작성 시 필요한 키워드
+> > - FROM : 기반이 되는 이미지
+> > - RUN : 이미지를 컨테이너로 만들 때 사용할 명령어(커맨드) 설정
+> > - ADD : 이미지에 호스트의 파일이나 폴더를 추가할 때 사용
+> > - COPY : 호스트의 파일이나 폴더를 이미지 안으로 복사할 때 사용
