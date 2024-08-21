@@ -28,3 +28,7 @@
 > > 12. INSERT INTO [테이블명] VALUES ([데이터]);로 데이터 생성
 > > 13. SELECT * FROM [테이블명];으로 데이터 생성 확인
 > > 14. commit;으로 테이블 수정 적용
+> ### MYSQL 저장 위치 및 VOLUME
+> > 1. docker exec -it [mysql 컨테이너명] bash
+> > 2. bash에서 cd ./var/lib/mysql
+> > 3. 해당 위치는 mysql의 DB가 저장되는 위치
